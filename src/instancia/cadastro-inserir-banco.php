@@ -11,7 +11,7 @@
                          $_POST['senha'],
                          $_POST['confirmaSenha']
     );
-    //header('location: ../../view/formulario-cadastro.php');
+    header('location: ../../view/formulario-cadastro.php');
   }catch (Exception $e) {
     Erro::trataErro($e);
   }
