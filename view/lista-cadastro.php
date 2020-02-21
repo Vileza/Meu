@@ -26,24 +26,56 @@
                 <tr>
                     <th>Id</th>
                     <th>Nome</th>
-                    <th class="acao">Editar</th>
-                    <th class="acao">Excluir</th>
+
+                    <th
+                      class="acao">Editar
+                    </th>
+
+                    <th
+                      class="acao">Excluir
+                    </th>
                 </tr>
             </thead>
+
             <tbody>
                 <?php foreach ($listando as $linha): ?>
                     <tr>
-                        <td><a href="#" class="btn btn-link"><?php echo $linha['id']; ?></a></td>
-                        <td><a href="#" class="btn btn-link"><?php echo $linha['nome']; ?></a></td>
-                        <td><a href="editar-cliente.php?id=<?php echo $linha['id']; ?>" class="btn btn-info">Editar</a></td>
-                        <td><a href="../src/instancia/excluir-cadastro.php?id=<?php echo $linha['id']; ?>" class="btn btn-danger">Excluir</a></td>
+                        <td>
+                          <a
+                            href="detalhe-cadastro.php?id=<?php echo $linha['id']; ?>"
+                            class="btn btn-link"><?php echo $linha['id']; ?>
+                          </a>
+
+                        </td>
+
+                        <td>
+                          <a
+                            href="detalhe-cadastro.php?id=<?php echo $linha['id']; ?>"
+                            class="btn btn-link"><?php echo $linha['nome']; ?>
+                          </a>
+                        </td>
+
+                        <td>
+                          <a
+                            href="editar-cliente.php?id=<?php echo $linha['id']; ?>"
+                            class="btn btn-info">Editar
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href="../src/instancia/excluir-cadastro.php?id=<?php echo $linha['id']; ?>"
+                            class="btn btn-danger">Excluir
+                          </a>
+                        </td>
                     </tr>
+
                 <?php endforeach; ?>
             </tbody>
         </table>
       <?php else: ?>
         <p>Nenhum item encontado.</p>
       <?php endif; ?>
+
     </div>
 </div>
 <?php require "padrao/rodape.php"; ?>

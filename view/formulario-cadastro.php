@@ -1,5 +1,5 @@
 <?php require "padrao/cabecalho.php"; ?>
-
+<h1 style="text-align:center;">FORMULÁRIO DE CADASTRO</h1>
 <form action="../src/instancia/cadastro-inserir-banco.php" method="post">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
