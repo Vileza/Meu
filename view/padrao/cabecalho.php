@@ -27,6 +27,8 @@
                 <li><a href="formulario-cadastro.php">CADASTRO</a></li>
                 <li><a href="lista-cadastro.php">LISTAR</a></li>
                 <li><a href="editar-cliente.php">EDITAR</a></li>
+                <li><a href="Entrar.php">Entrar</a></li>
+                <li><a href="../src/instancia/sair-sessao.php">Sair</a></li>
             </ul>
         </div>
     </div>

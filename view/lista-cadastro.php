@@ -1,4 +1,5 @@
 <?php
+  require_once "../src/instancia/valida-sessao.php";
   require "padrao/cabecalho.php";
   try{
    $listando = require "..\src\instancia\lista-cliente-cadastro.php";

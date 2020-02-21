@@ -1,4 +1,5 @@
 <?php
+  require_once "../src/instancia/valida-sessao.php";
   require "padrao/cabecalho.php";
   try{
   require "../Model/Banco.php";
@@ -14,12 +15,18 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="form-group">
-                <label for="">Nome</label>
-                <input name="nome" type="text" class="form-control" placeholder="Nome completo" value="<?php echo $result['nome'];  ?>" >
-                <label for="">CPF</label>
-                <input required name="cpf" type="text" class="form-control" placeholder="Seu CPF" value="<?php echo $result['cpf'];  ?>" >
-                <label for="">E-mail</label>
-                <input name="email" type="text" class="form-control" placeholder="Seu Email" value="<?php echo $result['email'];?>" >
+                <label for="nome">Nome</label>
+                  <input name="nome" type="text" class="form-control" placeholder="Nome completo" id="nome" value="<?php echo $result['nome'];  ?>" >
+
+                <label for="cpf">CPF</label>
+                  <input required name="cpf" type="text" class="form-control" placeholder="Seu CPF" id="cpf" value="<?php echo $result['cpf'];  ?>" >
+
+                <label for="mail">E-mail</label>
+                  <input name="email" type="text" class="form-control" placeholder="Seu Email" id="mail" value="<?php echo $result['email'];?>" >
+
+                <label for="user">Nome login:</label>
+                  <input type="text" name="usuario" id="user" class="form-control" placeholder="Seu nome de usuário" value="<?php echo $result['usuario']; ?>">
+
                 <input type="hidden" name="id" value="<?php echo $result['id']; ?>">
             </div>
             <input type="submit" class="btn btn-success btn-block" value="Salvar">

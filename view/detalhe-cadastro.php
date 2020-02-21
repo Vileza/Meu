@@ -19,6 +19,7 @@ try{
       <th style="width:30%; text-align:center;">NOME</th>
       <th style="width:30%; text-align:center;">CPF</th>
       <th style="text-align:center;">EMAIL</th>
+      <th style="text-align:center;">Nome Usuário</th>
 
     </tr>
 
@@ -35,6 +36,9 @@ try{
       </td>
       <td style="margin:0 10px;">
         <?php echo $listar['email'] ?>
+      </td>
+      <td>
+        <?php echo $listar['usuario']; ?>
       </td>
 
     </tr>
