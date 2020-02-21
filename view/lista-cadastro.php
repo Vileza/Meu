@@ -20,7 +20,8 @@
 
 <div class="row">
     <div class="col-md-12">
-        <table class="table">
+      <?php if(COUNT($listando) > 0 ): ?>
+        <table class="table" style="margin-top:10px;">
             <thead>
                 <tr>
                     <th>Id</th>
@@ -40,6 +41,9 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
+      <?php else: ?>
+        <p>Nenhum item encontado.</p>
+      <?php endif; ?>
     </div>
 </div>
 <?php require "padrao/rodape.php"; ?>
